@@ -63,6 +63,14 @@ A local Python workspace for projects, plugins, reusable GUI components, model i
 
 ![Application settings](images/b401aed4-e387-481d-8486-f87740b965b0.png)
 
+## Mobile views
+
+Scene Studio and the video editor can also be opened in a phone browser through the desktop application's optional phone sharing.
+
+| Scene Studio on mobile | Video editor on mobile |
+| --- | --- |
+| <img src="images/Screenshot_20261017_175011_Opera.jpg" alt="Scene Studio on a phone, showing a portrait showcase and animation controls" width="360"> | <img src="images/Screenshot_20261017_175041_Opera.jpg" alt="Video editor on a phone, showing the portrait preview, playback controls and media library" width="360"> |
+
 ## Run from source (Windows)
 
 Python 3.10 or newer is required; Python 3.13 is recommended for the Windows executable builder.
