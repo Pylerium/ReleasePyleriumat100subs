@@ -1,6 +1,6 @@
 # Pylerium
 
-<img src="assets/icons/pylerium-logo.png" alt="Pylerium" width="160">
+<img width="559" height="559" alt="pylerium-logo" src="https://github.com/user-attachments/assets/e03c7e06-6038-4932-81b1-4f285b4d2151" />
 
 **Free public beta · Windows source release**
 
