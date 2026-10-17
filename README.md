@@ -8,46 +8,60 @@ This copy starts with a fresh workspace. It includes no personal projects, recor
 Disclaimer: Pylerium is an original open-source developer workbench bringing the aesthetic of Call of Duty UI. It contains no proprietary game assets, extracted code, or trademarked material from Activision, Treyarch, or the Call of Duty franchise.
 A local Python workspace for projects, plugins, reusable GUI components, model inspection, process orchestration and searchable activity history.
 ### Lobby
-<img width="1901" height="921" alt="image" src="https://github.com/user-attachments/assets/afed9b88-c4ca-4b66-93c4-b4e8deedcd28" />
+
+![Lobby overview](images/676304250-afed9b88-c4ca-4b66-93c4-b4e8deedcd28.png)
 
 ### Loadouts
-<img width="1888" height="909" alt="image" src="https://github.com/user-attachments/assets/7afa506a-84f9-46f7-9316-57cd453a5089" />
+
+![Project loadouts](images/7afa506a-84f9-46f7-9316-57cd453a5089.png)
 
 ### Operators
-<img width="1894" height="913" alt="image" src="https://github.com/user-attachments/assets/49b0bb1c-eea6-462c-b861-87c9d69b6bcc" />
+
+![Operators workspace](images/49b0bb1c-eea6-462c-b861-87c9d69b6bcc.png)
 
 ### Maps
-<img width="1885" height="907" alt="image" src="https://github.com/user-attachments/assets/dff6b3ae-a293-4a8d-a1a6-3825e01d84ff" />
+
+![Maps and workflow connections](images/dff6b3ae-a293-4a8d-a1a6-3825e01d84ff.png)
 
 ### Missions
-<img width="1892" height="837" alt="image" src="https://github.com/user-attachments/assets/2f829221-6067-47c8-8711-e28adc8145f4" />
+
+![Missions workspace](images/2f829221-6067-47c8-8711-e28adc8145f4.png)
 
 ### Arsenal
-<img width="1882" height="839" alt="image" src="https://github.com/user-attachments/assets/c79e0196-1ccb-47b9-a4ed-503ab33a710d" />
-<img width="1885" height="834" alt="image" src="https://github.com/user-attachments/assets/854c9e06-7e06-4f9c-aec9-869bbc1e81c9" />
 
-### Workshop 
-<img width="1896" height="916" alt="image" src="https://github.com/user-attachments/assets/04396747-37cd-4f6d-8e55-e3193472e4c9" />
-<img width="1892" height="846" alt="image" src="images/04396747-37cd-4f6d-8e55-e3193472e4c9.png" />
+![Arsenal project library](images/c79e0196-1ccb-47b9-a4ed-503ab33a710d.png)
+
+![Arsenal project configuration](images/854c9e06-7e06-4f9c-aec9-869bbc1e81c9.png)
+
+### Workshop
+
+![Workshop code editor](images/04396747-37cd-4f6d-8e55-e3193472e4c9.png)
+
+![Workshop templates and tools](images/3cc2cd52-8e0d-4987-b6d1-d91c072b6862.png)
 
 ### Console
-<img width="1889" height="779" alt="image" src="https://github.com/user-attachments/assets/5b58d1ce-4fbf-4e86-b859-2b7befe2a935" />
 
+![Console output](images/5b58d1ce-4fbf-4e86-b859-2b7befe2a935.png)
 
 ### Barracks
-<img width="1891" height="770" alt="image" src="https://github.com/user-attachments/assets/b5cdbd67-cea0-4f0a-801d-353644082bf7" />
+
+![Barracks workspace](images/b5cdbd67-cea0-4f0a-801d-353644082bf7.png)
 
 ### Assets
-<img width="1052" height="1679" alt="image" src="https://github.com/user-attachments/assets/c64ee096-cf84-4a0c-8cdf-102eee60c307" />
+
+![Assets library and 3D model preview](images/c64ee096-cf84-4a0c-8cdf-102eee60c307.png)
 
 ### Pylerium Studio
-<img width="1862" height="855" alt="image" src="https://github.com/user-attachments/assets/f27239fc-517f-46f2-bd26-4a57790cd961" />
+
+![Pylerium Scene Studio](images/f27239fc-517f-46f2-bd26-4a57790cd961.png)
 
 ### Video Editor
-<img width="1866" height="858" alt="image" src="https://github.com/user-attachments/assets/a1aa622e-97df-4c77-b202-c6be6d515a8a" />
+
+![Video editor and timeline](images/a1aa622e-97df-4c77-b202-c6be6d515a8a.png)
 
 ### Settings
-<img width="1880" height="834" alt="image" src="https://github.com/user-attachments/assets/b401aed4-e387-481d-8486-f87740b965b0" />
+
+![Application settings](images/b401aed4-e387-481d-8486-f87740b965b0.png)
 
 ## Run from source (Windows)
 
