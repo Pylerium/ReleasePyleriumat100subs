@@ -28,7 +28,7 @@ A local Python workspace for projects, plugins, reusable GUI components, model i
 
 ### Workshop 
 <img width="1896" height="916" alt="image" src="https://github.com/user-attachments/assets/04396747-37cd-4f6d-8e55-e3193472e4c9" />
-<img width="1892" height="846" alt="image" src="https://github.com/user-attachments/assets/3cc2cd52-8e0d-4987-b6d1-d91c072b6862" />
+<img width="1892" height="846" alt="image" src="images/04396747-37cd-4f6d-8e55-e3193472e4c9.png" />
 
 ### Console
 <img width="1889" height="779" alt="image" src="https://github.com/user-attachments/assets/5b58d1ce-4fbf-4e86-b859-2b7befe2a935" />
