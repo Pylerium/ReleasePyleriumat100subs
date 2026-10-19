@@ -1,126 +1,126 @@
-# Pylerium
+# Pylerium Studio
 
-<img width="559" height="559" alt="pylerium-logo" src="https://github.com/user-attachments/assets/e03c7e06-6038-4932-81b1-4f285b4d2151" />
+<img src="assets/icons/pylerium-logo.png" alt="Pylerium logo" width="100">
 
-**Free public beta · Windows source release**
+**Free public beta · Windows · Python source release**
 
-This copy starts with a fresh workspace. It includes no personal projects, recordings, account credentials or imported model library. See [Release contents](RELEASE_NOTES.md).
-Disclaimer: Pylerium is an original open-source developer workbench bringing the aesthetic of Call of Duty UI. It contains no proprietary game assets, extracted code, or trademarked material from Activision, Treyarch, or the Call of Duty franchise.
-A local Python workspace for projects, plugins, reusable GUI components, model inspection, process orchestration and searchable activity history.
-### Lobby
+Build, run, inspect and showcase projects in a local developer workbench. Pylerium combines Python execution, a Devcord project explorer, opt-in plugins, model tools, Scene Studio and a video editor in one workspace.
 
-![Lobby overview](images/676304250-afed9b88-c4ca-4b66-93c4-b4e8deedcd28.png)
+![Pylerium desktop workspace](images/current/lobby.png)
 
-### Loadouts
+## Get started
 
-![Project loadouts](images/7afa506a-84f9-46f7-9316-57cd453a5089.png)
-
-### Operators
-
-![Operators workspace](images/49b0bb1c-eea6-462c-b861-87c9d69b6bcc.png)
-
-### Maps
-
-![Maps and workflow connections](images/dff6b3ae-a293-4a8d-a1a6-3825e01d84ff.png)
-
-### Missions
-
-![Missions workspace](images/2f829221-6067-47c8-8711-e28adc8145f4.png)
-
-### Arsenal
-
-![Arsenal project library](images/c79e0196-1ccb-47b9-a4ed-503ab33a710d.png)
-
-![Arsenal project configuration](images/854c9e06-7e06-4f9c-aec9-869bbc1e81c9.png)
-
-### Workshop
-
-![Workshop code editor](images/04396747-37cd-4f6d-8e55-e3193472e4c9.png)
-
-![Workshop templates and tools](images/3cc2cd52-8e0d-4987-b6d1-d91c072b6862.png)
-
-### Console
-
-![Console output](images/5b58d1ce-4fbf-4e86-b859-2b7befe2a935.png)
-
-### Barracks
-
-![Barracks workspace](images/b5cdbd67-cea0-4f0a-801d-353644082bf7.png)
-
-### Assets
-
-![Assets library and 3D model preview](images/c64ee096-cf84-4a0c-8cdf-102eee60c307.png)
-
-### Pylerium Studio
-
-![Pylerium Scene Studio](images/f27239fc-517f-46f2-bd26-4a57790cd961.png)
-
-### Video Editor
-
-![Video editor and timeline](images/a1aa622e-97df-4c77-b202-c6be6d515a8a.png)
-
-### Settings
-
-![Application settings](images/b401aed4-e387-481d-8486-f87740b965b0.png)
-
-## Mobile views
-
-Scene Studio and the video editor can also be opened in a phone browser through the desktop application's optional phone sharing.
-
-| Scene Studio on mobile | Video editor on mobile |
-| --- | --- |
-| <img src="images/Screenshot_20261017_175011_Opera.jpg" alt="Scene Studio on a phone, showing a portrait showcase and animation controls" width="360"> | <img src="images/Screenshot_20261017_175041_Opera.jpg" alt="Video editor on a phone, showing the portrait preview, playback controls and media library" width="360"> |
-
-## Run from source (Windows)
-
-Python 3.10 or newer is required; Python 3.13 is recommended for the Windows executable builder.
+Python 3.10 or newer is required; Python 3.13 is recommended for Windows executable builds.
 
 ```powershell
+git clone https://github.com/Pylerium/PyleriumStudio.git
+cd PyleriumStudio
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m playwright install chromium
 .\.venv\Scripts\python.exe orchestration-menu.py
 ```
 
-Scene Studio webpage captures require the Playwright browser installed above. Video recording, audio extraction and MP4 export also require `ffmpeg` and `ffprobe` on PATH; verify with `ffmpeg -version` and `ffprobe -version`. The source release does not bundle an executable or FFmpeg.
+Webpage capture uses Playwright Chromium. Recording, media conversion and MP4 export require `ffmpeg` and `ffprobe` on PATH. GitHub Engine requires [Git](https://git-scm.com/downloads) and [GitHub CLI](https://cli.github.com/). This update publishes source; it does not include a newly built executable.
 
-The application creates a local `orchestration_data/` workspace on first use. Personal databases, project execution history, virtual environments, caches and generated executables are excluded from Git. Set `PYLERIUM_HOME` to select another workspace.
+## Updated Workshop and Devcord
 
-## Project execution loadouts
+Import a folder, ZIP, individual files or dropped directories. Explore code, profiles, dependencies and media; edit files; and run Python scripts, Python packages, Flask apps or standalone HTML pages. Native imports stream in the background without an artificial file-count cap.
 
-Click a project in **Arsenal** to configure its execution loadout. Primary opens the entry point and named argument attachments; use **Open Editor** to edit code and **Run Project** to execute it. Configure companion scripts, environment files, diagnostics, output reports, policies and pipeline overrides per project.
+- Flask preserves the configured port unless it is occupied. HTML entries launch a local Flask server for relative CSS, JavaScript, modules, fonts and graphics, then open **# preview**.
+- Interactive Python programs receive input through **# console**. Output is bounded and streamed; Stop owns the complete child-process lifecycle.
+- Media plays inside the embedded viewer. Supported conversions run in the background, retain the same player and support seeking.
+- Imported Python projects integrate with Arsenal, execution loadouts, existing editors and explicit EXE builds.
 
-**Run Project does not build an executable.** Packaging is an explicit action in **Workshop → Build EXE**. Legacy C4/PyInstaller output hooks are disabled automatically.
+| Devcord workspace | Running HTML preview |
+| --- | --- |
+| ![Devcord profile and file navigation](images/current/devcord-workspace.png) | ![Live HTML and canvas preview](images/current/html-preview.png) |
 
-Right-click an Arsenal project for loadout, editor, run, rename, duplicate, folder and asset actions. Assign an image or static 3D model to each execution card. The Assets studio provides model inspection, material overrides, rotation controls and removable assignments.
+## Phone access and a roomier layout
 
-## Build something creative
+Open **Workshop Tools → PHONE QR CODE**, enable sharing and scan from a phone on the same local network. Select the workspace or a project, copy an address, or open connection help. Running HTML and Flask previews use LAN gateways while their existing desktop ports remain unchanged. Sharing is off by default; turning it off closes phone listeners and leaves desktop projects running.
 
-Workshop and Plugin Builder include 12 creative experiences, 12 reusable UI elements and 6 additional boilerplates. Explore constellation networks, particles, waves, an orbital observatory, cellular life, mandalas, digital rain, terrain, a focus garden, branching stories, an idea board and color palettes. Templates are editable starting points; creating or inserting one does not enable a plugin automatically.
+Phone access permits editing and running projects on the computer. Only enable it on a trusted network. Ordinary HTTP and streamed responses are supported; WebSocket forwarding is not currently supported. External CDN resources require internet access.
 
-## Build a Windows executable
+**Hide Navigation**, **Ctrl+Shift+N**, the global **View** menu and Devcord's **Layout** menu let you reclaim space without removing pages. Narrow phone layouts hide side panels by default and let navigation open over the preview.
+
+| Connection controls | Phone-sized preview |
+| --- | --- |
+| ![Devcord phone connection dialog with sharing off](images/current/phone-connection.png) | <img src="images/current/mobile-preview.png" alt="Devcord preview at a phone viewport" width="260"> |
+
+## Scene Studio and video editing
+
+The **Showcase** workspace includes local scene creation, 40 vertical scene presets, project/web/plugin capture, model and camera tools, recording and optional phone sharing. Edit Studio adds timeline editing, layouts, cropping, motion, captions, callouts, audio and export tools. The integrated runtime lives in `showcase_studio/`; `python sync_showcase.py` validates it.
+
+| Scene Studio | Edit Studio |
+| --- | --- |
+| ![Scene Studio with a fresh scene](images/current/scene-studio.png) | ![Edit Studio timeline and tools](images/current/video-editor.png) |
+
+[Showcase guide](SHOWCASE_INTEGRATION.md) · [Scene Studio](showcase_studio/SHOWCASE.md) · [Vertical scenes](showcase_studio/VERTICAL_SCENES.md) · [Video editing](showcase_studio/VIDEO_EDITOR.md)
+
+## Plugins and GitHub Engine
+
+Enable plugins explicitly through **Workshop → Editor & Build Tools → Plugins**. The release includes 15 starter tools plus Jumpback, Ultimate Terminal, cellular automata, Prompt Hub, API Hub and **GitHub Engine**. Extensions can add pages, actions, project templates, execution hooks and reusable commands. Disabled plugins retain their source.
+
+GitHub Engine provides repositories, issues, planning lanes, pull requests, Actions, draft releases, milestones, history, GitHub Projects and local Git tools. Operations run through bounded asynchronous queues with cancellation and timeouts. Repository changes require an explicit action; there is no automatic push, merge or publication. Authenticate with `gh auth login`, environment credentials, or a session-only token. Credentials are not shipped with this release.
+
+The refreshed GitHub Engine uses a clear view sidebar, recent repository history, selection-preserving refresh, filtered row counts and identifier copying. Local checkout tools and the activity log collapse independently to give the current view more space.
+
+| Plugin tools | GitHub Engine |
+| --- | --- |
+| ![Plugin builder and installed extensions](images/current/plugins.png) | ![GitHub Engine before connecting an account](images/current/github-engine.png) |
+
+API Hub now combines DEV.to drafts/publishing, paginated GitHub insights and a Discord bot/webhook workspace. Discord includes guided server, channel, message, role, moderation, thread, invite, event, command and webhook tools, a message/embed builder, streamed attachments, searchable results and redacted exports. Advanced REST supports additional bot API operations. Live Gateway events, voice/video and command handlers remain responsibilities of your bot service.
+
+| API Hub | Discord workspace |
+| --- | --- |
+| ![API Hub service tabs and DEV.to publisher](images/current/api-hub.png) | ![Discord operation browser and message builder](images/current/discord-workspace.png) |
+
+Open **Connections** to apply credentials. Keys are session-only by default; remembering them explicitly saves unencrypted local JSON. Requests are asynchronous, bounded, cancellable and rate-limit aware. Discord changes require confirmation and the bot's granted permissions.
+
+[Plugin API and lifecycle](PLUGINS.md) · [Starter collection](STARTER_TOOLS.md) · [API Hub and Discord guide](plugins/dev_blogpost/README.md) · [GitHub Engine setup and operation](plugins/github_engine/README.md)
+
+## Execution, models and creative tools
+
+Arsenal execution loadouts configure interpreters, arguments, companion scripts, environment files, diagnostics and workflows. **Run Project** executes a project; **Build EXE** is a separate operation. Assets provides model inspection and removable assignments. Workshop templates include creative simulations, reusable UI elements and editable boilerplates. Console, Barracks and the Killchain command bar connect live output, history, search and project actions.
+
+Images and 3D models are independent assignments. In **Assets → Card artwork**, or a card's right-click **Card artwork** menu, choose **Automatic**, **Assigned image** or **Assigned 3D model**. Automatic prefers the image when both exist. The live preview and inspector continue showing the assigned model regardless of the card choice. Removing an image preserves the model; removing a model preserves the image.
+
+| Image on the card, model in the preview | Independent model inspector |
+| --- | --- |
+| ![Execution loadout showing its image and independent model preview](images/current/loadout-artwork.png) | ![Model inspector retains the assigned model and materials](images/current/model-inspector.png) |
+
+## Screenshots
+
+These images were captured from fresh local workspaces using sample HTML and generated demo artwork/models. No personal projects, account data, private media or active phone address were used. The phone image shows Chromium at a phone-sized viewport.
+
+<details>
+<summary>All desktop workspaces and compact navigation</summary>
+
+| Workspace | Workspace |
+| --- | --- |
+| ![Execution loadouts](images/current/loadouts.png) | ![Operators](images/current/operators.png) |
+| ![Maps and workflows](images/current/maps.png) | ![Missions and schedules](images/current/missions.png) |
+| ![Arsenal project execution](images/current/arsenal.png) | ![Console](images/current/console.png) |
+| ![Barracks execution history](images/current/barracks.png) | ![Assets and model tools](images/current/assets.png) |
+| ![Settings](images/current/settings.png) | ![Collapsed navigation](images/current/compact-navigation.png) |
+
+</details>
+
+## Privacy and release contents
+
+Local projects, databases, clipboard/activity history, captures, recordings, tokens, plugin account settings, virtual environments and build output are excluded. `.gitignore` protects generated local data; executable builds stage shipped plugins without saved configuration files or caches. A fresh workspace is created on first use in `orchestration_data/`; use `PYLERIUM_HOME` to choose another location. Jumpback/activity and clipboard collection can retain sensitive local information when enabled; manage them in their respective controls.
+
+[Release notes and validation](RELEASE_NOTES.md) · [Source file checksums](RELEASE_MANIFEST.json) · [MIT license](LICENSE)
+
+## Build and verify
 
 ```powershell
 .\.venv\Scripts\python.exe -m pip install -r requirements-build.txt
-.\.venv\Scripts\python.exe build_exe.py
+.\.venv\Scripts\python.exe build_exe.py --onedir --no-icon-picker
+.\.venv\Scripts\python.exe -m unittest discover -s . -p "test_*.py"
 ```
 
-The icon picker appears when running the builder directly. Workshop also provides a configurable executable builder. Build output stays local in dist/ and build/.
+For a portable distribution, package the complete folder build with `release_package.py`; see [Build verification](BUILD.md#verification). Browser checks are opt-in: set `PYLERIUM_BROWSER_TESTS=1` with Playwright Chromium installed. FFmpeg and optional Node-based checks require their respective tools.
 
-## Guides
-
-[Operations](OPERATIONS.md) · [Workshop](WORKSHOP.md) · [Plugins](PLUGINS.md) · [Executable builds](BUILD.md) · [Starter gallery](STARTER_TOOLS.md)
-
-## Checks
-
-```powershell
-python -m unittest discover -s . -p "test_*.py"
-```
-
-Showcase Studio is integrated into the SHOWCASE workspace, with Workshop/plugin capture and optional phone sharing. See [SHOWCASE_INTEGRATION.md](SHOWCASE_INTEGRATION.md).
-
-## Studio and editing
-
-[Scene Studio](Promotional/SHOWCASE.md) · [40 vertical scenes](Promotional/VERTICAL_SCENES.md) · [Video editor and callouts](Promotional/VIDEO_EDITOR.md)
-
-Desktop modules live at the repository root. The canonical Studio lives in `Promotional/`; run `python sync_showcase.py` after editing it to update the bundled `showcase_studio/` copy.
+[Operations](OPERATIONS.md) · [Workshop](WORKSHOP.md) · [Plugins](PLUGINS.md) · [Build guide](BUILD.md)
